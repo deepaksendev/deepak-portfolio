@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home | Deepak Sen
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <h1>
+            Hi, I'm <span>Deepak Sen</span>
+        </h1>
+
+        <h2>
+            Python Developer | Web Developer
+        </h2>
+
+        <p>
+            Final year B.Tech Computer Science student passionate about
+            building scalable web applications, AI-powered systems,
+            and modern digital experiences using Python, Flask,
+            WordPress, React, and Machine Learning technologies.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/projects" class="btn">
+                View Projects
+            </a>
+
+            <a href="/contact" class="btn secondary-btn">
+                Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img src="{{ url_for('static',
+        filename='images/portfolioimage.png') }}"
+        alt="Deepak Sen">
+
+    </div>
+
+</section>
+
+<!-- SKILLS SECTION -->
+
+<section class="skills-section">
+
+    <h2>Skills & Technologies</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Flask</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">WordPress</div>
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">OpenCV</div>
+        <div class="skill-card">TensorFlow</div>
+        <div class="skill-card">NumPy</div>
+        <div class="skill-card">Pandas</div>
+
+    </div>
+
+</section>
+
+<!-- FEATURED PROJECTS -->
+
+<section class="featured-projects">
+
+    <h2>Featured Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+                 alt="THos-netV2">
+
+            <h3>THos-netV2</h3>
+
+            <p>
+                AI-powered hand gesture detection system using Python,
+                OpenCV, TensorFlow, and Machine Learning techniques.
+            </p>
+
+            <a href="/thosnetv2" class="btn">
+                Know More
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop"
+                 alt="Swadeshi">
+
+            <h3>Swadeshi</h3>
+
+            <p>
+                Modern React-based e-commerce platform designed for
+                promoting Indian local products and digital commerce.
+            </p>
+
+            <a href="/swadeshi" class="btn">
+                Know More
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=1200&auto=format&fit=crop"
+                 alt="Websuite AI">
+
+            <h3>Websuite AI</h3>
+
+            <p>
+                AI-driven website analysis platform focused on SEO,
+                design improvement, and performance optimization.
+            </p>
+
+            <a href="/websuiteai" class="btn">
+                Know More
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
