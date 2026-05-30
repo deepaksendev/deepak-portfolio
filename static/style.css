@@ -104,6 +104,7 @@ body{
 
 .btn:hover{
     transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(56,189,248,0.25);
 }
 
 .secondary-btn{
@@ -883,3 +884,50 @@ body{
     }
 
 }
+.footer{
+    margin-top: 0;
+}
+.education-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.education-tags span{
+    background:#0f172a;
+    padding:10px 18px;
+    border-radius:30px;
+}
+
+.education-section,
+.services-section,
+.cta-section{
+    padding: 100px 10%;
+}
+
+.education-section h2,
+.services-section h2,
+.cta-section h2{
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.education-card,
+.achievement-card,
+.service-card{
+    background: rgba(30,41,59,0.8);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.education-card:hover,
+.achievement-card:hover,
+.service-card:hover{
+    transform: translateY(-5px);
+}
+
