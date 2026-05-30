@@ -1028,3 +1028,7 @@ body{
     margin: 0 auto 30px;
     line-height: 1.8;
 }
+
+.cta-section{
+    border: 10px solid red !important;
+}
