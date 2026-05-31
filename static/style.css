@@ -1029,3 +1029,76 @@ body{
     line-height: 1.8;
 }
 
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px){
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+        gap: 30px;
+    }
+
+    .hero-left h1{
+        font-size: 38px;
+    }
+
+    .hero-left h2{
+        font-size: 20px;
+    }
+
+    .hero-left p{
+        font-size: 16px;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn{
+        width: 220px;
+        text-align: center;
+    }
+
+    .hero-right img{
+        max-width: 280px;
+    }
+
+    .about-preview,
+    .education-section,
+    .services-section,
+    .featured-projects,
+    .skills-section{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about-preview h2,
+    .education-section h2,
+    .services-section h2,
+    .featured-projects h2,
+    .skills-section h2{
+        font-size: 32px;
+    }
+
+    .cta-section{
+        margin: 60px 20px;
+        padding: 40px 20px;
+    }
+
+    .cta-section h2{
+        font-size: 32px;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-center,
+    .footer-right{
+        align-items: center;
+    }
+}
